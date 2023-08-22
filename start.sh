@@ -5,6 +5,6 @@ if [ $? -eq 0 ]; then
 
 cd "$(dirname "$0")"
 ruby "version.rb"
-#sh $(git pull $(jq -r '.repo' "config.json"))
+git pull
 
 fi
