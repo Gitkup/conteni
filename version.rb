@@ -1,10 +1,7 @@
 #!/usr/bin/env ruby
 
-# Get the parent directory path
-parent_dir = File.dirname(File.dirname(__FILE__))
-
 # Specify the filename within the parent directory
-file_to_print = File.join(parent_dir, 'version')
+file_to_print = 'version'
 
 # Check if the file exists and then print its contents
 if File.file?(file_to_print)
