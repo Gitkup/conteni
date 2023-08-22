@@ -7,7 +7,7 @@ cd "$(dirname "$0")"
 ruby "version.rb"
 echo "new version test"
 
-sleep 2
+sleep $(jq -r '.period' "config.json")
 git pull
 clear
 sh start.sh
