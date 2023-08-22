@@ -24,5 +24,3 @@ if [ "$all_binaries_installed" = "false" ]; then
     echo "Please install the missing binaries to continue."
     exit 1
 fi
-
-echo "All required binaries are installed."
