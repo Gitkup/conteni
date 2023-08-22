@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sh check.sh
+sh "$(dirname "$0")/check.sh"
 if [ $? -eq 0 ]; then
 
 ruby "$(dirname "$0")/version.rb"
