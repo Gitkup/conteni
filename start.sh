@@ -5,7 +5,7 @@ if [ $? -eq 0 ]; then
 
 cd "$(dirname "$0")"
 ruby "version.rb"
-echo "new version test"
+echo "Ctrl + C to quit"
 
 sleep $(jq -r '.period' "config.json")
 git pull
